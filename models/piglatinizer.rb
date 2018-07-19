@@ -11,6 +11,10 @@ class PigLatinizer
     result = ""
     if is_vowel?(word[0])
       result = "#{word}way"
+    else
+      if is_vowel(word[1])
+        result = "#{word.slice(1..-1)}#{word[0]}ay"
+      end
     end
   end
 end
