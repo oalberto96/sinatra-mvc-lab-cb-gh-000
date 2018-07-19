@@ -8,6 +8,9 @@ class PigLatinizer
   end
 
   def translate_word(word)
-    
+    result = ""
+    if is_vowel?(word[0])
+      result = "#{word}way"
+    end
   end
 end
