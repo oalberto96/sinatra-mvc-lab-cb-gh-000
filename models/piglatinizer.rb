@@ -10,6 +10,7 @@ class PigLatinizer
     words.each do |word|
       piglatinazed << translate_word(word)
     end
+    piglatinazed.join(" ")
   end
 
   def translate_word(word)
