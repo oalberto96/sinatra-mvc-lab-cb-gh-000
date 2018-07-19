@@ -5,6 +5,11 @@ class PigLatinizer
   end
 
   def piglatinaze(text)
+    piglatinazed = []
+    words = text.split(" ")
+    words.each do |word|
+      piglatinazed << translate_word(word)
+    end
   end
 
   def translate_word(word)
